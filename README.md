@@ -1,129 +1,118 @@
-+🌍 CO2 Emissions Visualizer
+# CO₂ Emissions Visualizer
 
-NOTE: Hosted on a free tier; please allow up to 1 minute for the initial spin-up and restart if the server is asleep.
+An interactive Python application that allows users to explore historical CO₂ emissions data and compare countries using graphs and percentage differences. The application also includes GDP, population, land area, and CO₂ emissions per capita.
 
-the link to the streamlit app: https://python-project-cpn9.onrender.com/
-A Python Streamlit application that allows users to visualize CO2 emissions for a country over time and compare the emissions of two countries.
-Features
+## Features
 
-    View CO2 emissions for a selected country.
+- **Country-level analysis:** Select a country and starting year to explore its historical data.
+- **Country comparisons:** Plot two countries on the same graph to compare their trends over time.
+- **Percentage comparisons:** Calculate the percentage difference between two countries using a year for which both have data.
+- **Multiple indicators:** Explore total CO₂ emissions, CO₂ emissions per capita, GDP, land area, and population.
+- **Interactive visualisations:** Choose which indicators to display through the Streamlit interface.
+- **Historical trend analysis:** Examine changes in country-level indicators across available years.
+- **Logarithmic scaling:** Display positive CO₂ emission values on a logarithmic scale where appropriate.
+- **Data cleaning:** Handle missing values and convert data into appropriate numerical formats.
+- **Caching:** Use Streamlit caching to reduce repeated data loading.
 
-    Choose the starting year for the visualization.
+## Technologies Used
 
-    Compare the CO2 emissions of two different countries.
+- **Python** - Main programming language.
+- **Streamlit** - Interactive web application.
+- **Pandas** - Data cleaning and processing.
+- **Matplotlib** - Graph creation and customisation.
+- **Seaborn** - Data visualisation and styling.
+- **NumPy** - Numerical operations.
 
-    Choose a different starting year for each country.
+## Data Sources
 
-    Automatically validate country names against the dataset.
+The datasets used in this project are sourced from [Our World in Data](https://ourworldindata.org/).
 
-    Check whether data is available for the selected year.
+The application uses CSV files containing:
 
-    Display CO2 emissions using line graphs.
+- Annual CO₂ emissions.
+- CO₂ emissions per capita.
+- GDP.
+- Land area.
+- Population.
 
-    Use a logarithmic scale to make differences between countries easier to visualize.
+## Installation and Setup
 
-Preview
+### Requirements
 
-The application asks the user to enter a country and a starting year.
+- Python 3
+- pip
+- Git (optional)
 
-The user can then choose between:
+### 1. Clone the Repository
 
-    Viewing the emissions of one country.
+Open a terminal and run:
 
-    Comparing two countries.
+```bash
+git clone https://github.com/rapanjeetsingh/python-project.git
+cd python-project
+## Installation and Setup
 
-The resulting graph displays annual CO2 emissions from the selected starting year onward.
-Dataset
+## Requirements
+- Python 3
+- pip
+- Git (optional)
 
-The application uses a CSV dataset containing annual CO2 emissions by country.
+## 1. Clone the Repository
 
-The dataset should contain the following columns:
-Column	Description
-entity	Name of the country or entity
-year	Year of the recorded data
-emissions_total	Total CO2 emissions
+Open a terminal and run:
+ 
+```bash
+git clone https://github.com/rapanjeetsingh/python-project.git
+cd python-project
+```
 
-The CSV file should be stored in the same directory as the Python application.
-Project Structure
+Alternatively, download the repository as a ZIP file from GitHub and extract it.
 
-CO2-Emissions-Visualizer/
+## 2. Install Dependencies
 
+Install the required Python libraries:
 
-├── app.py
-
-├── annual-co2-emissions-per-country.csv
-
-├── requirements.txt
-
-└── README.md
-
-Getting Started
-1. Clone the repository
-
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-
-Then move into the project directory:
-
-cd CO2-Emissions-Visualizer
-
-2. Install the dependencies
-
-Install the packages listed in requirements.txt:
-
+```bash
 pip install -r requirements.txt
+```
 
-3. Run the application
+## 3. Run the Application
 
-Start the Streamlit application with:
+Start the Streamlit application:
 
+```bash
 streamlit run app.py
+```
 
-The application should open automatically in your web browser.
-Using the Application
-View One Country
+## 4. Open the Application
 
-    Enter the name of a country.
+Streamlit will display a local URL in the terminal, usually http://localhost:8501. Open this URL in your web browser to use the application.
 
-    Enter the starting year.
+> 💡 **Note:** Make sure all required CSV datasets are in the location expected by the application before running it.
 
-    Select No when asked whether you want to compare it with another country.
+What I Learned
 
-    The application will display a graph of the country's CO2 emissions from the selected year onward.
+Developing this project gave me practical experience in:
 
-Compare Two Countries
+    Breaking a larger programming task into reusable functions.
+    Processing real-world datasets with Pandas.
+    Building interactive applications with Streamlit.
+    Using data visualisation to communicate patterns and comparisons.
+    Handling missing values and differences in data availability.
+    Calculating percentage differences and interpreting numerical results.
+    Improving graph readability through formatting and scale selection.
 
-    Enter the first country.
+The project also helped me understand the importance of data quality and context when comparing countries. A graph can make patterns easier to identify, but the conclusions drawn from it depend on the quality, coverage, and meaning of the underlying data.
+Future Development
 
-    Enter the starting year for the first country.
+Potential areas for further development include:
 
-    Select Yes when asked whether you want to compare it with another country.
+    Adding more environmental and economic indicators.
+    Providing more detailed information about individual datasets and their units.
+    Improving options for comparing countries over the same time period.
+    Exploring relationships between emissions, population, and economic growth.
+Rapanjeet Singh
 
-    Enter the second country.
 
-    Enter the starting year for the second country.
 
-    The application will display both countries on the same graph.
 
-Data Validation
-
-The application checks whether:
-
-    A country name has been entered.
-
-    The country exists in the dataset.
-
-    Data is available for the selected year.
-
-    Both countries are valid when using comparison mode.
-
-If the requested country or year is not available, the application displays an appropriate error message.
-Visualization
-
-The application uses line graphs to display CO2 emissions over time.
-
-A logarithmic y-axis is used because CO2 emissions can vary greatly between countries. This makes it easier to visualize trends for countries with significantly different emission levels.
-Technologies
-
-This project is written in Python and uses Streamlit for the user interface and data visualization libraries for the graphs.
-
-The required Python packages are listed separately in requirements.txt.
