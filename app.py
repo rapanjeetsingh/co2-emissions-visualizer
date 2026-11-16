@@ -216,11 +216,7 @@ def plot_one_country_data(country, year, data, graph):
         return
 
     #the graphs settings/config
-    sns.set_theme(
-        style="darkgrid",
-        context="notebook",
-        palette="deep"
-    )
+    sns.set_theme(style="whitegrid")
 
     fig, ax = plt.subplots(figsize=(10, 5))
 
@@ -397,26 +393,7 @@ def plot_comparison(
         )
         return
 
-    sns.set_theme(
-        style="whitegrid",
-        context="notebook",
-        rc={
-            "figure.facecolor": "#FFFFFF",
-            "axes.facecolor": "#FFFFFF",
-            "axes.edgecolor": "#E5E7EB",
-            "axes.labelcolor": "#374151",
-            "xtick.color": "#6B7280",
-            "ytick.color": "#6B7280",
-            "grid.color": "#E5E7EB",
-            "grid.linewidth": 0.7,
-            "axes.spines.top": False,
-            "axes.spines.right": False,
-            "axes.titleweight": "bold",
-            "axes.titlesize": 17,
-            "axes.labelsize": 11,
-            "legend.frameon": False
-        }
-    )
+    sns.set_theme(style="whitegrid")
 
     fig, ax = plt.subplots(figsize=(11, 5.5))
 
