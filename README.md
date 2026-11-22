@@ -1,3 +1,5 @@
+main link: https://co2-emissions-visualizer.streamlit.app/ 
+
 # CO₂ Emissions Visualizer
 
 An interactive Python application that allows users to explore historical CO₂ emissions data and compare countries using graphs and percentage differences. The application also includes GDP, population, land area, and CO₂ emissions per capita.
@@ -62,7 +64,7 @@ cd python-project
 Open a terminal and run:
  
 ```bash
-git clone https://github.com/rapanjeetsingh/python-project.git
+git clone https://co2-emissions-visualizer.streamlit.app/
 cd python-project
 ```
 
