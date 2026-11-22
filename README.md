@@ -50,7 +50,6 @@ The application uses CSV files containing:
 Open a terminal and run:
 
 ```bash
-git clone https://github.com/rapanjeetsingh/co2-emissions-visualizer.git
 cd co2-emissions-visualizer
 ## Installation and Setup
 
@@ -62,6 +61,8 @@ cd co2-emissions-visualizer
 ## 1. Clone the Repository
 
 Open a terminal and run:
+
+git clone https://github.com/rapanjeetsingh/co2-emissions-visualizer.git
  
 
 ```
