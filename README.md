@@ -63,9 +63,7 @@ cd co2-emissions-visualizer
 
 Open a terminal and run:
  
-```bash
-git clone https://co2-emissions-visualizer.streamlit.app/
-cd python-project
+
 ```
 
 Alternatively, download the repository as a ZIP file from GitHub and extract it.
